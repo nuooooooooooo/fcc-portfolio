@@ -247,26 +247,68 @@ li + li {
   text-align: center;
   right: 0;
   left: 0;
+  z-index: 399;
 }
 
-.project-1 {
+.project-1::before {
+  content: "";
   background-color: var(--medium-gray);
   color: var(--dark-gray);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 399;
+  transition: 0.5s ease-in-out;
 }
 
-.project-2 {
+.project-2::before {
   background-color: var(--dark-gray);
   color: var(--light-gray);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 399;
+  transition: 0.5s ease-in-out;
 }
 
-.project-3 {
+.project-3::before {
   background-color: var(--medium-dark-gray);
   color: #fff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 399;
+  transition: 0.5s ease-in-out;
+}
+
+.project-4::before {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 399;
+  transition: 0.5s ease-in-out;
 }
 
 .project-4 {
-  background-color: var(--light-gray);
   color: var(--dark-gray);
+}
+
+.project-3,
+.project-2 {
+  color: var(--light-gray);
 }
 
 .project-tile img {
@@ -275,7 +317,8 @@ li + li {
   width: 100%;
 }
 
-.project-tile:hover {
+.project-tile:hover,
+.project-tile:hover::before {
   background-color: transparent;
   color: transparent;
 }
