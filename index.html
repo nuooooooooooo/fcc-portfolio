@@ -9,13 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
   </head>
   <body>
     <header class="nav">
       <nav id="navbar">
+        <a href="#"><i class="fas fa-code"></i></a>
         <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="hl-green"><a href="#projects">Projects</a></li>
+          <li class="hl-green"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -28,21 +33,30 @@
         </div>
         <div class="hero-content">
           <h1 class="section-page-title">Hi, I'm Manon,</h1>
-          <div class="section-subtitle">an aspiring front-end developer.</div>
+          <div class="section-subtitle">
+            an aspiring
+            <span class="hl-green">front-end developer</span>.
+          </div>
         </div>
+        <img
+          class="hero-img"
+          src="images/undraw_nature_on_screen_xkli.svg"
+          alt=""
+        />
       </div>
     </section>
     <section class="about-me">
       <div class="flex-container flex--right">
+        <img class="about-img" src="images/undraw_dev_focus_b9xo.svg" alt="" />
         <div class="section-content-light">
           <h2 class="section-title-light">
             About me
           </h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-            consequatur impedit quidem sunt rem iure eos officia. Amet et nemo
-            explicabo porro, nobis quisquam pariatur laboriosam! Assumenda quo
-            voluptatibus dicta?
+            I graduated in 2018 with an MA in EN ZH > FR translation and love
+            anything related to languages. Recently, I have had more time to
+            explore my interest in coding, especially web design and
+            development.
           </p>
         </div>
         <div class="side-info side-info--right">
@@ -54,90 +68,106 @@
     </section>
     <section id="projects">
       <div class="flex-container">
-        <div class="side-info">
+        <div class="side-info side-info--up">
           <div class="section-number">03</div>
           <div class="section-line"></div>
           <div class="section-name">Projects</div>
         </div>
-        <h2 class="section-title">Projects</h2>
-        <div class="section-content">
-          <div class="row">
-            <a class="tile-text__link" href="#" rel="noopener noreferrer">
-              <div class="project-tile project-4">
-                <h3 class="tile-text__title">
-                  More to come...
-                </h3>
+        <div class="row-wrapper">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-content">
+            <p class="section-content--half">
+              The projects below were made as part of
+              <a
+                href="http://freecodecamp.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hl-green"
+                >Freecodecamp</a
+              >'s Responsive Web Design curriculum. As such, they were made
+              using and HTML and CSS only.
+            </p>
+            <div class="row">
+              <div>
+                <a class="tile-text__link" href="#" rel="noopener noreferrer">
+                  <div class="project-tile project-4">
+                    <h3 class="tile-text__title">
+                      More to come...
+                    </h3>
 
-                <div class="text-wrapper">
-                  <div class="tile-text"></div>
+                    <div class="text-wrapper">
+                      <div class="tile-text"></div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <a
+                class="tile-text__link"
+                href="https://web-nuo.github.io/fcc-tribute-page/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><div class="project-tile project-1">
+                  <h3 class="tile-text__title">Tribute Page</h3>
+                  <img src="images/ac-tribute-page.png" alt="" />
+                  <div class="text-wrapper">
+                    <div class="tile-text"></div>
+                  </div></div
+              ></a>
+
+              <a
+                class="tile-text__link"
+                href="https://web-nuo.github.io/fcc-survey-form/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-tile project-2">
+                  <h3 class="tile-text__title">Survey form</h3>
+                  <img src="images/survey-form.png" alt="" />
                 </div>
-              </div>
-            </a>
-            <a
-              class="tile-text__link"
-              href="https://web-nuo.github.io/fcc-tribute-page/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><div class="project-tile project-1">
-                <h3 class="tile-text__title">Tribute Page</h3>
-                <img src="images/ac tribute page.png" alt="" />
-                <div class="text-wrapper">
-                  <div class="tile-text"></div>
-                </div></div
-            ></a>
+              </a>
 
-            <a
-              class="tile-text__link"
-              href="https://web-nuo.github.io/fcc-survey-form/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="project-tile project-2">
-                <h3 class="tile-text__title">Survey form</h3>
-                <img src="images/survey form.png"" alt="" />
-              </div>
-            </a>
+              <a
+                class="tile-text__link"
+                href="https://web-nuo.github.io/fcc-product-landing-page/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-tile project-3">
+                  <h3 class="tile-text__title">Product landing page</h3>
+                  <img src="images/product-landing-page.png" alt="" />
+                </div>
+              </a>
 
-            <a
-              class="tile-text__link"
-              href="https://web-nuo.github.io/fcc-product-landing-page/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="project-tile project-3">
-                <h3 class="tile-text__title">Product landing page</h3>
-                <img src="images/product landing page.png" alt="" />
-              </div>
-            </a>
+              <a
+                class="tile-text__link"
+                href="https://web-nuo.github.io/fcc-technical-documentation-page/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="project-tile project-4">
+                  <h3 class="tile-text__title">Documentation page</h3>
+                  <img src="images/documentation-page.png" alt="" />
+                </div>
+              </a>
 
-            <a
-              class="tile-text__link"
-              href="https://web-nuo.github.io/fcc-technical-documentation-page/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="project-tile project-4">
-                <h3 class="tile-text__title">Documentation page</h3>
-                <img src="images/documentation page.png" alt="" />
-              </div>
-            </a>
-
-            <a class="tile-text__link" href="#" rel="noopener noreferrer">
-              <div class="project-tile project-1">
-                <h3 class="tile-text__title">More to come...</h3>
-              </div>
-            </a>
+              <a class="tile-text__link" href="#" rel="noopener noreferrer">
+                <div class="project-tile project-1">
+                  <h3 class="tile-text__title">More to come...</h3>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer id="contact">
+    <footer class="footer" id="contact">
       Coded by
       <a
         href="http://github.com/web-Nuo"
         target="_blank"
         rel="noopener noreferrer"
         id="profile-link"
+        class="hl-green"
         >Manon</a
       >
     </footer>

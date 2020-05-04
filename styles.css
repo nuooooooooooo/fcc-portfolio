@@ -12,14 +12,26 @@ html {
 }
 
 :root {
-  --light-gray: rgb(240, 245, 249);
-  --medium-gray: rgba(201, 214, 223, 1);
-  --medium-dark-gray: rgb(104, 124, 138);
-  --dark-gray: rgb(82, 97, 107);
-  --black: rgb(30, 32, 34);
+  --light-gray: rgb(241, 241, 241);
+  --medium-gray: rgb(192, 201, 198);
+  --medium-dark-gray: rgb(120, 119, 131);
+  --dark-gray: rgb(93, 92, 104);
+  --black: rgb(30, 34, 34);
+  --green: rgb(0, 191, 166);
 }
 
 /* ===Typography=== */
+
+a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: var(--black);
+}
+
+i {
+  font-size: 1.5rem;
+  color: var(--green);
+}
 
 .section-number {
   font-family: "PT Serif", sans-serif;
@@ -92,16 +104,37 @@ html {
   text-transform: uppercase;
 }
 
+.footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  color: var(--black);
+}
+
 /* ===Nav=== */
 .nav {
   position: sticky;
   top: 0;
+  background-color: #fff;
+  z-index: 400;
+  padding: 1em;
+  box-shadow: 0 0 5px 0px rgba(158, 158, 158, 0.5);
 }
 
-.hero {
-  height: 100vh;
-  background-color: var(--light-gray);
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
 }
+
+li {
+  display: inline-block;
+}
+
+li + li {
+  margin-left: 1em;
+}
+
 /* ===Flex containers=== */
 
 .row {
@@ -153,17 +186,51 @@ html {
   margin-bottom: 0.5em;
 }
 
+/* === Links === */
+
+.hl-green {
+  background: linear-gradient(to bottom, #00bfa6 0%, #00bfa6 100%);
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  background-position: 0 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.hl-green:hover {
+  background-size: 4px 50px;
+}
+
 /* ===Layout=== */
 
-.section-content-light {
-  width: 40%;
+.hero {
+  height: 100vh;
+  background-color: var(--light-gray);
+}
+
+.hero-img {
+  margin-right: 2em;
+
+  max-width: 400px;
+}
+
+.about-img {
+  max-width: 400px;
+  margin-right: 2em;
 }
 
 .side-info--right {
   padding-left: 6em;
 }
 
-/* === Projects === */
+.side-info--up {
+  align-self: flex-start;
+}
+
+.section-content--half {
+  width: min(90%, 950px);
+}
+
+/* === Projects showcase === */
 .project-tile {
   width: 250px;
   height: 250px;
@@ -189,12 +256,12 @@ html {
 
 .project-2 {
   background-color: var(--dark-gray);
-  color: var(--medium-gray);
+  color: var(--light-gray);
 }
 
 .project-3 {
   background-color: var(--medium-dark-gray);
-  color: var(--light-gray);
+  color: #fff;
 }
 
 .project-4 {
@@ -214,12 +281,40 @@ html {
 }
 
 /* ===footer === */
-footer {
-  height: 800px;
+.footer {
+  padding: 6em 0;
+  background-color: var(--light-gray);
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {
   .side-info {
+    display: none;
+  }
+
+  .flex-container {
+    width: 85%;
+
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section-content--half {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .row {
+    justify-content: space-between;
+  }
+  .hero-img,
+  .about-img {
     display: none;
   }
 }
