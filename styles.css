@@ -25,6 +25,7 @@ html {
 a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+  color: black;
   color: var(--black);
 }
 
@@ -114,14 +115,18 @@ i {
 .nav {
   position: sticky;
   top: 0;
+
   background-color: #fff;
   z-index: 400;
   padding: 1em;
+
   box-shadow: 0 0 5px 0px rgba(158, 158, 158, 0.5);
 }
 
 #navbar {
   display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
@@ -140,6 +145,7 @@ li + li {
 .row {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1000px;
   justify-content: space-between;
   justify-content: space-evenly;
   width: 90%;
@@ -148,9 +154,12 @@ li + li {
 .flex-container {
   height: 100%;
   width: 90%;
+
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   padding: 6em 0;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -208,7 +217,8 @@ li + li {
 }
 
 .hero-img {
-  margin-left: 2em;
+  margin-right: 2em;
+
   max-width: 400px;
 }
 
